@@ -5,6 +5,9 @@ This chatbot is designed to assist users in the healthcare domain by providing p
 
 [![Open in Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?repo=Indranil-Seal/medicortex.ai&ref=master)
 
+[!NOTE]
+When you open this project in GitHub Codespaces using the button above, the development environment is automatically set up for you. A virtual environment is created and all required Python packages from `requirements.txt` are installed automatically, so you can start coding right away without any manual setup.
+
 # downloaddata.py
 Use this python script to download the data from kagglehub onto your data folder on project repository. 
 
