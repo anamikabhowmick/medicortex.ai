@@ -139,3 +139,9 @@ wcwidth==0.2.13
 webcolors==24.11.1
 webencodings==0.5.1
 websocket-client==1.8.0
+gitdb==4.0.12
+GitPython==3.1.41
+joblib==1.5.2
+setuptools==78.1.1
+smmap==5.0.2
+

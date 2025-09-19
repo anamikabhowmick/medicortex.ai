@@ -11,6 +11,8 @@ import sentence_transformers
 from sentence_transformers import SentenceTransformer
 import faiss
 import openai
+from tqdm import tqdm
+
 
 # call modules & methods:
 import dataprocessing

@@ -33,14 +33,9 @@ for item in os.listdir(path):
         shutil.copy2(s, d)
 
 print("Files copied to:", target_dir)
-```
-/**
- * Handles the main processing logic starting from line 38.
- * Initializes required resources, processes input data, and manages error handling.
- * Ensures proper cleanup and returns the final result or error status.
- */
 
-## (Running Locally?) Set-up the Python Virtual Environment 
+
+## Set-up the Python Virtual Environment 
 This project is built with **Python 3.10**.
 To set up the Python virtual environment and install dependencies:
 
