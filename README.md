@@ -1,6 +1,40 @@
 # medicortex.ai
 This chatbot is designed to assist users in the healthcare domain by providing preliminary medical suggestions to patients seeking guidance online, both before and after consultations with healthcare professionals (HCPs). It is important to note that this chatbot is intended solely as a supportive tool to empower patients and should not be considered a substitute for professional medical advice, diagnosis, or treatment. The chatbot serves as a patient enabler, complementing, not replacing, the expertise and care provided by qualified healthcare professionals.
 
+## Set-up the Python Virtual Environment
+This project is built with **Python 3.10**.
+To set up the Python virtual environment and install dependencies:
+
+1. Ensure Python 3.10 is installed on your system.
+2. Open your command prompt.
+3. Navigate to your project directory.
+4. Fetch the `requirements.txt` file from the repository:
+    ```bash
+    git pull origin main
+    ```
+5. Create a virtual environment:
+    ```bash
+    python -m venv env
+    ```
+6. Activate the virtual environment:
+    ```bash
+    env\Scripts\activate.bat
+    ```
+7. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+To activate the virtual environment, follow these steps:
+
+1. Open your command prompt.
+2. Navigate to your project directory.
+3. Run the following command to activate the environment:
+
+```bash
+env\Scripts\activate.bat
+```
+Once activated, your prompt will show the environment name, and you can install dependencies locally.
+
 # downloaddata.py
 Use this python script to download the data from kagglehub onto your data folder on project repository. 
 
