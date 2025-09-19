@@ -12,9 +12,6 @@ from sentence_transformers import SentenceTransformer
 import faiss
 import openai
 
-#output_dir = Path("D:/Data & Projects/medicortex.ai/model_objects")
-#output_dir.mkdir(exist_ok=True)
-
 # call modules & methods:
 import dataprocessing
 from dataprocessing import *

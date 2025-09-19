@@ -1,7 +1,46 @@
 # medicortex.ai
 This chatbot is designed to assist users in the healthcare domain by providing preliminary medical suggestions to patients seeking guidance online, both before and after consultations with healthcare professionals (HCPs). It is important to note that this chatbot is intended solely as a supportive tool to empower patients and should not be considered a substitute for professional medical advice, diagnosis, or treatment. The chatbot serves as a patient enabler, complementing, not replacing, the expertise and care provided by qualified healthcare professionals.
 
-## Set-up the Python Virtual Environment
+# Open in GitHub Codespaces
+
+[![Open in Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?repo=Indranil-Seal/medicortex.ai&ref=master)
+
+# downloaddata.py
+Use this python script to download the data from kagglehub onto your data folder on project repository. 
+
+```bash
+import kagglehub
+import shutil
+import os
+
+# Download dataset (goes to kagglehub's cache)
+path = kagglehub.dataset_download("yousefsaeedian/ai-medical-chatbot")
+print("Downloaded to:", path)
+
+# Your target directory
+target_dir = r"enter/your/directory/"
+
+# Create target directory if it doesn't exist
+os.makedirs(target_dir, exist_ok=True)
+
+# Move all files from download path to your target directory
+for item in os.listdir(path):
+    s = os.path.join(path, item)
+    d = os.path.join(target_dir, item)
+    if os.path.isdir(s):
+        shutil.copytree(s, d, dirs_exist_ok=True)
+    else:
+        shutil.copy2(s, d)
+
+print("Files copied to:", target_dir)
+```
+/**
+ * Handles the main processing logic starting from line 38.
+ * Initializes required resources, processes input data, and manages error handling.
+ * Ensures proper cleanup and returns the final result or error status.
+ */
+
+## (Running Locally?) Set-up the Python Virtual Environment 
 This project is built with **Python 3.10**.
 To set up the Python virtual environment and install dependencies:
 
@@ -35,35 +74,7 @@ env\Scripts\activate.bat
 ```
 Once activated, your prompt will show the environment name, and you can install dependencies locally.
 
-# downloaddata.py
-Use this python script to download the data from kagglehub onto your data folder on project repository. 
 
-```bash
-import kagglehub
-import shutil
-import os
-
-# Download dataset (goes to kagglehub's cache)
-path = kagglehub.dataset_download("yousefsaeedian/ai-medical-chatbot")
-print("Downloaded to:", path)
-
-# Your target directory
-target_dir = r"enter/your/directory/"
-
-# Create target directory if it doesn't exist
-os.makedirs(target_dir, exist_ok=True)
-
-# Move all files from download path to your target directory
-for item in os.listdir(path):
-    s = os.path.join(path, item)
-    d = os.path.join(target_dir, item)
-    if os.path.isdir(s):
-        shutil.copytree(s, d, dirs_exist_ok=True)
-    else:
-        shutil.copy2(s, d)
-
-print("Files copied to:", target_dir)
-```
 
 # Git Ops & Guidlines
 
