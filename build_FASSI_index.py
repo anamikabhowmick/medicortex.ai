@@ -18,7 +18,7 @@ def build_FASSI_index(embeddings):
         >>> index.ntotal
         100
     """
-
+    import faiss
     dimension = embeddings.shape[1]
     index = faiss.IndexFlatL2(dimension)
     index.add(embeddings)
