@@ -3,3 +3,5 @@ research/
 .env
 *.faiss
 *.pkl
+__pycache__/
+*.pyc
